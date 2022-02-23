@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/*INDEX HTML*/
+/* ENCABEZADO*/
+/*Titulo y subtitulo*/
+
+.padre{
+    display: grid;
+    grid-template-areas: 
+     "header header header"
+     "nav nav nav" 
+     "main main main"
+     "main main main"
+     "footer footer footer" 
+    ;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-rows: 150px 70px 900px 900px 50px;
+}
+
+.header{
+    grid-area: header;
+    background-image: url(../images/banner3.png);
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: solid 2px black;
+}
+
+.titulo__titulo {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.subtitulo__escrito {
+    font-size: 30px;
+    color: black;
+}
+
+
+/*Navegación*/
+.nav{
+    grid-area: nav;
+}
+.navegador{
+    display: flex;
+    background-color: #ffeece ;
+    border: 2px solid black;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+.navegador li{
+    list-style: none;
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+    background-color: aquamarine;
+}
+
+.navegador li a {
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+}
+
+
+/*Contenido principal*/
+.main{
+    background-color: rgb(255, 255, 231) ;
+    grid-area: main;
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+.primerImagen{
+    height: 500px;
+    width: 80%;
+    background-color: #f7cd8e;
+    border: 2px solid  black;
+    margin: 50px 0 0 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.primerImagen__titulo{
+    padding-bottom: 20px;
+}
+
+.primerImagen__img{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.segundaImagen{
+    height: 600px;
+    width: 80%;
+    background-color: #f7cd8e;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 50px 0 0px 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.segundaImagen__titulo{
+    padding-bottom: 20px;
+}
+
+.segundaImagen__img{
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.video{
+    height: 500px;
+    width: 80%;
+    background-color: #f7cd8e;
+    border: 2px solid  black;
+    display: inline-block;
+    margin: 50px 0 50px 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.video__titulo{
+    padding-bottom: 20px;
+}
+
+.video__youtube{
+    margin-bottom: 20px; 
+}
+
+/*footer*/
+
+.footer{
+    grid-area:footer;
+}
+ 
+
+.footerr{
+    display: flex;
+    background-color: #FFCB91 ;
+    text-align: center; 
+    padding-top: 30px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footerr li{
+    width: auto;
+    height: 50px;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.footerr li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HISTORIA */
+/*main*/
+.header1{
+    grid-area: header;
+    background-image: url(../images/banner3.png);
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: solid 2px black;
+}
+.padre1{
+display: grid;
+grid-template-areas: 
+     "header1 header1 header1"
+     "nav1 nav1 nav1" 
+     "principal principal principal"
+     "principal principal principal"
+     "footer1 footer1 footer1" 
+    ;
+    grid-template-columns: 33.33% 33.33% 33.33% ;
+    grid-template-rows: 150px 55px 900px 900px 50px;
+}
+
+.header1{
+    grid-area: header1;
+}
+
+.nav1{ 
+    grid-area: nav1;
+}
+
+.principal{
+    grid-area: principal;
+    background-color: #FFEFA1 ;
+
+}
+
+.principal__galeria{
+    display: flex;
+    margin: 2px 2px 2px 2px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.principal__titulo{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #94EBCD ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imagen1{
+    height: 254px;
+    margin-left: 5px;
+}
+
+.imagen2{
+    height: 254px;
+    margin-left: 3px;
+
+}
+
+.imagen3{
+    height: 254px;
+    margin-left: 3px
+}
+
+.imagen4{
+    height: 254px;
+    margin-left: 3px
+}
+
+.principal__texto{
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.principal__img{
+    float: right;
+    height: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+ .footer1{
+     grid-area: footer1;
+ }
+ .footerrr{
+     display: flex;
+     background-color: #FFCB91 ;
+     text-align: center; 
+     padding-top: 30px;
+     justify-content: center;
+     justify-content: space-evenly;
+ }
+
+ .footerrr li{
+    width: auto;
+    height: 50px;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+ .footerrr li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* AREAS */
+.mainareas{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FFEFA1;
+    padding-bottom: 40px;
+}
+
+.mainareas__titulo{
+    padding-bottom: 10px;
+}
+
+.navv{
+    width: 100%;
+    text-align: center;
+    background-color: #94EBCD ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navv__lista li{
+    display: inline-block;
+}
+
+ /*Domingos*/
+
+.domingos{
+    height: 30%;
+    width: 60%;
+    border: solid black 2px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    margin-left: 300px;
+    background-color: #f7cd8e;
+}
+.domingos__titulo{
+    background-color: #94EBCD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.domingos__img{
+    height: 300px;
+    margin-bottom: 20px
+}
+
+/*matrimonios*/
+.matrimonios{
+    height: 30%;
+    width: 60%;
+    border: solid black 2px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    margin-left: 300px;
+    background-color: #f7cd8e;
+}
+
+.matrimonios__titulo{
+    background-color: #94EBCD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.matrimonios__img{
+    height: 300px;
+    margin-bottom: 20px
+}
+
+
+
+/*vida plena*/
+.VidaPlena{
+    height: 30%;
+    width: 60%;
+    border: solid black 2px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    margin-left: 300px;
+    background-color: #f7cd8e;
+}
+
+.VidaPlena__titulo{
+    background-color: #94EBCD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.VidaPlena__img{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/* jovenes bethel*/
+.JovenesBethel{
+    height: 30%;
+    width: 60%;
+    border: solid black 2px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    margin-left: 300px;
+    background-color: #f7cd8e;
+}
+
+.JovenesBethel__titulo{
+    background-color: #94EBCD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.JovenesBethel__img{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/*ministerio de niños*/
+.MinisteriodeNiños{
+    height: 30%;
+    width: 60%;
+    border: solid black 2px;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    margin-left: 300px;
+    background-color: #f7cd8e;
+}
+
+.MinisteriodeNiños__titulo{
+    background-color: #94EBCD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.MinisteriodeNiños__img1{
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.MinisteriodeNiños__img2{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* REUNIONES */
+.reuniones{
+    background-color: #FFEFA1;
+    padding-bottom: 40px;
+}
+
+.reuniones__titulo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.DomingosH{
+    height: 350px;
+    width: 90%;
+    border: solid black 2px;
+    background-color: #f7cd8e;
+    margin-left: 90px;
+    padding-left: 30px;
+}
+.DomingosH__subtitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+.DomingosH__img{
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.MatrimoniosH{
+    height: 350px;
+    width: 90%;
+    border: solid black 2px;
+    background-color: #f7cd8e;
+    margin-left: 90px;
+    padding-left: 30px;
+}
+
+.MatrimoniosH__subtitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.MatrimoniosH__img{
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.VidaPlenaH{
+    height: 350px;
+    width: 90%;
+    border: solid black 2px;
+    background-color: #f7cd8e;
+    margin-left: 90px;
+    padding-left: 30px;
+}
+
+.VidaPlenaH__subtitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.VidaPlenaH__img{
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.JovenesBethelH{
+    height: 350px;
+    width: 90%;
+    border: solid black 2px;
+    background-color: #f7cd8e;
+    margin-left: 90px;
+    padding-left: 30px;
+}
+
+.JovenesBethelH__subtitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.JovenesBethelH__img{
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.MinisteriodeNiñosH{
+    height: 350px;
+    width: 90%;
+    border: solid black 2px;
+    background-color: #f7cd8e;
+    margin-left: 90px;
+    padding-left: 30px;
+}
+
+.MinisteriodeNiñosH__subtitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.MinisteriodeNiñosH__img{
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+/*CONTACTO*/
+.mainContacto{
+    background-color: #FFEFA1;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: 1500px;
+}
+
+.mainContacto__titulo{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.formulario{
+    height: 75%;
+    width: 200px;
+    margin: 80px 100px 0px 350px;
+    border:2px black;
+    background-color: #94EBCD;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 500px;
+    text-align: center;
+}
+
+.formulario__texto{
+    height: 500px; 
+    text-align: center;
+}
+    
